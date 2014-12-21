@@ -14,8 +14,4 @@
 
 @property (nonatomic, strong) CMMotionManager *motionManager;
 @property (nonatomic, strong) IBOutlet UILabel *holdingLabel;
-
-- (IBAction)playHolding:(id)sender;
-- (IBAction)playNotHolding:(id)sender;
-
 @end

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		036FAC851A41512300AF7D89 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FAC841A41512300AF7D89 /* CoreFoundation.framework */; };
+		036FAC871A41512800AF7D89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FAC861A41512800AF7D89 /* Foundation.framework */; };
+		036FAC891A41512F00AF7D89 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FAC881A41512F00AF7D89 /* AVFoundation.framework */; };
+		036FAC8B1A41513E00AF7D89 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FAC8A1A41513E00AF7D89 /* CoreMotion.framework */; };
+		036FAC8D1A41514400AF7D89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FAC8C1A41514400AF7D89 /* UIKit.framework */; };
 		03D563381A26CD690026B7CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D563371A26CD690026B7CC /* main.m */; };
 		03D5633B1A26CD690026B7CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D5633A1A26CD690026B7CC /* AppDelegate.m */; };
 		03D5633E1A26CD690026B7CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D5633D1A26CD690026B7CC /* ViewController.m */; };
@@ -27,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036FAC841A41512300AF7D89 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		036FAC861A41512800AF7D89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		036FAC881A41512F00AF7D89 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		036FAC8A1A41513E00AF7D89 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		036FAC8C1A41514400AF7D89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03D563321A26CD690026B7CC /* Holdr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holdr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D563361A26CD690026B7CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D563371A26CD690026B7CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +57,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				036FAC8D1A41514400AF7D89 /* UIKit.framework in Frameworks */,
+				036FAC8B1A41513E00AF7D89 /* CoreMotion.framework in Frameworks */,
+				036FAC891A41512F00AF7D89 /* AVFoundation.framework in Frameworks */,
+				036FAC871A41512800AF7D89 /* Foundation.framework in Frameworks */,
+				036FAC851A41512300AF7D89 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,11 @@
 		03D563291A26CD690026B7CC = {
 			isa = PBXGroup;
 			children = (
+				036FAC8C1A41514400AF7D89 /* UIKit.framework */,
+				036FAC8A1A41513E00AF7D89 /* CoreMotion.framework */,
+				036FAC881A41512F00AF7D89 /* AVFoundation.framework */,
+				036FAC861A41512800AF7D89 /* Foundation.framework */,
+				036FAC841A41512300AF7D89 /* CoreFoundation.framework */,
 				03D563341A26CD690026B7CC /* Holdr */,
 				03D5634E1A26CD690026B7CC /* HoldrTests */,
 				03D563331A26CD690026B7CC /* Products */,
@@ -343,7 +363,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
 				INFOPLIST_FILE = Holdr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +375,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
 				INFOPLIST_FILE = Holdr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +436,7 @@
 				03D563571A26CD690026B7CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03D563581A26CD690026B7CC /* Build configuration list for PBXNativeTarget "HoldrTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +445,7 @@
 				03D5635A1A26CD690026B7CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
