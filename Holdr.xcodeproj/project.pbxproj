@@ -184,7 +184,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Useless Shit";
+				ORGANIZATIONNAME = "Useless Apps";
 				TargetAttributes = {
 					03D563311A26CD690026B7CC = {
 						CreatedOnToolsVersion = 6.1;
@@ -363,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = NO;
 				INFOPLIST_FILE = Holdr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -375,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = NO;
 				INFOPLIST_FILE = Holdr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
